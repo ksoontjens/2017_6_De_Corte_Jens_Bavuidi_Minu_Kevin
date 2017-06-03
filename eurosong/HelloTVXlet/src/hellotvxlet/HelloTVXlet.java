@@ -29,8 +29,6 @@ public class HelloTVXlet implements Xlet, HActionListener, ResourceClient, HBack
     private HScene scene;
     private boolean debug=true;
     
-    //VANAF HIER
-    
     private HScreen screen;
     private HBackgroundDevice bgDevice;
     private HBackgroundConfigTemplate bgTemplate;
@@ -58,11 +56,9 @@ public class HelloTVXlet implements Xlet, HActionListener, ResourceClient, HBack
         System.out.println("Image kan niet geladen worden.");
     }
     
-    //TOT HIER
     
     public String[] landenNamen = {"Belgie", "Frankrijk", "Nederland", "Duitsland",
                       "Spanje"};
-    //public String[] beginUren = {"20:00","20:10","20:20","20:30","20:40"};
     String beginUur = "20:00";
     SimpleDateFormat df = new SimpleDateFormat("HH:mm");
     Date d;
@@ -102,8 +98,6 @@ public class HelloTVXlet implements Xlet, HActionListener, ResourceClient, HBack
         catch (java.lang.Exception e) {
             System.out.println(e.toString());
         }
-        
-        //TOT HIER
         
         if(debug)System.out.println("Xlet Initialiseren");
        // Het template maken
